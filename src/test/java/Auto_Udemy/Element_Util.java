@@ -188,11 +188,28 @@ public class Element_Util {
 		}
 	}
 
-	
-//	public void selectSearchOptions()
-//	{
-//		doFindElement(searchOptions).getText()
-//	}
+	//To Select text from context menu
+	public void selectContextMenu(By locator, By locator1, String ContOption)
+	{
+		
+		WebElement contxtClick = driver.findElement(locator);
+		
+		Actions act = new Actions(driver);
+		act.contextClick(contxtClick).perform();
+		
+		List<WebElement> contxtList = driver.findElements(locator1);
+		
+		for(WebElement e : contxtList)
+		{
+			String text = e.getText();
+			System.out.println("-->" + text);
+			if(text.equals(ContOption))
+			{
+				e.click();
+				break;
+			}
+		}
+	}
 
 }
 

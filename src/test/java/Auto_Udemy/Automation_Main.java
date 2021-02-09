@@ -53,6 +53,8 @@ public class Automation_Main {
 				.xpath("//div[@class='udlite-block-list-item-content' and contains(text(),'Web Development')]");
 		By sm_3_JavaScript = By
 				.xpath("//div[@class='udlite-block-list-item-content' and contains(text(),'JavaScript')]");
+		
+		// XPath for IT & Software 
 
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -61,6 +63,9 @@ public class Automation_Main {
 		Thread.sleep(1000);
 
 		elmnt_util.findTextandClick(topCatagories, "href", "https://www.udemy.com/courses/it-and-software/");
+		
+		
+		
 
 		// Login into application
 
