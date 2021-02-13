@@ -209,6 +209,13 @@ public class Element_Util {
 				break;
 			}
 		}
+		
+//		public static void selectcheckbox(String name)
+//		{
+//			By checkBox = By.xpath("//a[@_name='"+name+"']/parent::td/preceding-sibling::td");
+//			WebElement CheckBox_button = driver.findElement(checkBox);
+//			CheckBox_button.click();
+//		}
 	}
 
 }
